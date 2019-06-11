@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		ul,ol,li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		.top-wrap{
+			position: relative;
+			width: 100%;
+			height: 30px;
+			background-color: rgb(244,244,244);
+			margin: 0px auto;
+			border-bottom: 1px solid black;
+		}
+		.top{
+			position: relative;
+			width: 1200px;
+    		height: 30px;
+    		margin: 0px auto;
+		}
+		.part1{
+			float: left;
+			height: 30px;
+			line-height: 30px;
+		}
+		.part1 a{
+			color: black;
+			margin: 5px;
+			font-size: 12px;
+		}
+		.part1 img{
+			position: absolute;
+			top: 5px;
+		}
+		.part1 p{
+			display: inline;
+			margin-left: 20px;
+			font-size: 13.11px;
+		}
+		.part2{
+			float: right;
+			height: 30px;
+			line-height: 30px;
+		}
+		.part2 a{
+			color: black;
+			font-size: 12px;
+		}
+		.part2 p{
+			display: inline;
+			font-size: 12px;
+			margin-left: 5px;
+		}
+
+		.nav-wrap{
+			width:100%;
+			height: 145px;
+			border-bottom: 3px solid red;
+			margin: 0px auto;
+		}
+		.nav{
+			position: relative;
+			width: 1200px;
+			height: 145px;
+			margin: 0px auto;
+		}
+		.nav img{
+		    margin-top: 18px;
+		}
+		.nav p a{
+			width: 90px;
+		    height: 35px;
+		    color: #000;
+		    font-size: 16px;
+		    float: left;
+		    text-align: center;
+		    line-height: 35px;
+		    margin: 0px 8px;
+		}
+		.nav p a:hover{
+		    color: #fff;
+		    background-color: red;
+		    border-radius: 6px/6px;
+		    font-size: 16px;
+		}
+		.inp1{
+			width: 494px;
+			height: 37px;
+			position: absolute;
+			left: 325px;
+			bottom: 65px;
+		}
+		.inp1 input{
+			border: 3px solid red;
+			width: 410px;
+			height: 31px;
+			font-size: 14px;
+			text-indent: 1em;
+			color:rgb(188,188,188);
+		}
+		.inpa{
+			width: 82px;
+			height: 37px;
+			background-color: red;
+			position: absolute;
+			left: 412px;
+			top:0px;
+		}
+		.inpa>a{
+			color: white;
+			line-height: 37px;
+			margin-left:25px;
+		}
+		.shop{
+			width: 150px;
+			height: 40px;
+			background-color: rgb(245,245,245);
+			position: absolute;
+			left: 1050px;
+			bottom: 65px;
+		}
+		.shop img{
+			position: absolute;
+			left: 24px;
+			bottom: 6px;
+		}
+		.shop a{
+			font-size:14px;
+			line-height: 40px;
+			position: absolute;
+			left:50px;
+			color: black;
+		}
+
+		.content-wrap{
+			width: 100%;
+			height: 655px;
+			background-color: #fbfbfb;
+		}
+		.content{
+			width: 1200px;
+			height: 655px;
+			margin: 0px auto;
+		}
+		.content a{
+			color: black;
+		}
+		.content>p{
+			font-size: 14px;
+			line-height: 60px;
+		}
+		.menu{
+			width: 215px;
+			height: 563px;
+			background-color: rgb(255,255,255);
+			float: left;
+		}
+		.P1{
+			position: relative;
+			width: 215px;
+			height: 45px;
+			border-bottom:10px solid #fbfbfb;
+		}
+		.P1 img{
+			position: absolute;
+			left:35px;
+			top:13px;
+		}
+		.P1 a{
+			position: absolute;
+			left: 80px;
+			line-height: 45px;
+		}
+		.P2{
+			width: 215px;
+			height: 508px;
+		}
+		.P2 a{
+			display: block;
+			margin-top: 20px;
+			margin-left: 80px;
+		}
+		.P2 a:hover{
+			color: red;
+		}
+		.picture{
+			width: 973px;
+			height: 563px;
+			background-color: rgb(255,255,255);
+			float: right;
+		}
+		.picture>ul>li{
+			float: left;
+			width: 222px;
+			height: 253px;
+			border:1px solid #d3d3d3;
+			margin-top:19px;
+			margin-left: 17px;
+			text-align: center;
+		}
+		.picture img{
+			margin-top: 10px;
+		}
+		.p1{
+			color: rgb(170,170,170);
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		.picture span{
+			font-size: 15px;
+		}
+
+		.down-wrap{
+			width: 100%;
+			height: 248px;
+			background-color: rgb(46,46,46);
+		}
+		.down{
+			width: 1200px;
+			height: 248;
+			margin: 0px auto;
+		}
+		.guide{
+			position: relative;
+			width: 1200px;
+			height: 150px;
+			border-bottom: 1px solid rgb(69,69,69)
+		}
+		.guide1{
+			width: 300px;
+			display: inline;
+		}
+		.guide1>ul{
+			float: left;
+			margin-right: 200px;
+		}
+		.guide1>ul>li{
+			color: white;
+			font-size: 14px;
+			margin-top: 15px;
+		}
+		.guide1 a{
+			color: white;
+		}
+		.down>p{
+			color: rgb(111,111,111);
+			text-align: center;
+			font-size: 14px;
+			margin-top: 20px;
+		}
+		.down>p>a{
+			color:  rgb(111,111,111);
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="top-wrap">
+		<div class="top">
+			<div class="part1">
+				<a href="#">我的收藏</a>
+				<a href="#">E族之家手机版</a>
+				<img src="images/qq.png"><p>328203328</p>
+			</div>
+			<div class="part2">
+				<a href="#">扫描加入</a>
+				<p>欢迎来到E族之家，</p>
+				<a href="#">请登录</a>&nbsp<span style="font-size: 13.11px;">|</span>
+				<a href="#">注册</a>
+			</div>
+		</div>
+	</div>
+	<div class="nav-wrap">
+		<div class="nav">
+			<img src="images/ehome.png"/>
+			<p>
+				<a href="#" >首页</a>
+				<a href="#" >E族生活</a>
+				<a href="#" >E族服务</a>
+				<a href="#" >E族爱心</a>
+			</p>
+			<div class="inp1">
+				<input type="text" name="keyword" value="请输入关键词！">
+				<div class="inpa"><a href="#" >搜索</a></div>
+			</div>
+			<div class="shop">
+				<img src="images/car.png"/>
+				<a href="#">购物车(<span style="color: red">0</span>)件</a>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrap">
+		<div class="content">
+			<p>
+				当前位置：
+				<a href="#">E族爱心</a>>
+				<a href="#">食品</a>
+			</p>
+			<div class="menu">
+				<p class="P1">
+					<img src="images/menu.png"/>
+					<a href="#">全部分类</a>
+				</p>
+				<p class="P2">
+					<a href="#">>食品</a>
+					<a href="#">>生活用品</a>
+				</p>
+			</div>
+			<div class="picture">
+				<ul>
+					<li>
+						<img src="images/辣椒.png" />
+						<p class="p1">精品辣椒100g</p>
+						<p>
+						<span>￥90.00元</span>
+						</p>
+					</li>
+					<li>
+						<img src="images/百香果.png" />
+						<p class="p1">特级百香果3斤</p>
+						<p>
+						<span>￥90.00元</span>
+						</p>
+					</li>
+					<li>
+						<img src="images/啤酒.png" />
+						<p class="p1">万威啤酒500ml</p>
+						<p>
+						<span>￥90.00元</span>
+						</p>
+					</li>
+					<li>
+						<img src="images/松子.png" />
+						<p class="p1">万威啤酒500ml</p>
+						<p>
+						<span>￥90.00元</span>
+						</p>
+					</li>
+					<li>
+						<img src="images/辣椒.png" />
+						<p class="p1">精品辣椒100g</p>
+						<p>
+						<span>￥90.00元</span>
+						</p>
+					</li>
+					<li>
+						<img src="images/百香果.png" />
+						<p class="p1">精品辣椒100g</p>
+						<p>
+						<span>￥90.00元</span>
+						</p>
+					</li>
+					<li>
+						<img src="images/啤酒.png" />
+						<p class="p1">万威啤酒500ml</p>
+						<p>
+						<span>￥90.00元</span>
+						</p>
+					</li>
+					<li>
+						<img src="images/松子.png" />
+						<p class="p1">万威啤酒500ml</p>
+						<p>
+						<span>￥90.00元</span>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="down-wrap">
+		<div class="down">
+			<div class="guide">
+				<div class="guide1">
+					<ul>
+						<li style="font-size: 16px;">新手上路</li>
+						<li><a href="#">售后流程</a></li>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">订购方式</a></li>
+					</ul>
+					<ul>
+						<li style="font-size: 16px;">配送方式</li>
+						<li><a href="#">货到付款区域</a></li>
+						<li><a href="#">配送支付查询</a></li>
+						<li><a href="#">支付方式说明</a></li>
+					</ul>
+					<ul>
+						<li style="font-size: 16px;">购物指南</li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">订购流程</a></li>
+						<li><a href="#">注册新会员</a></li>
+					</ul>
+					<ul>
+						<li style="font-size: 16px;">售后服务</li>
+						<li><a href="#">退换货原则</a></li>
+						<li><a href="#">售后服务保证</a></li>
+						<li><a href="#">换货流程</a></li>
+					</ul>
+					<ul style="margin-right: 0px;">
+						<li style="font-size: 16px;">关于我们</li>
+						<li><a href="#">网络故障报告</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">投诉与建议</a></li>
+					</ul>
+				</div>
+			</div>
+			<p>
+				<a href="#">E族生活</a>&nbsp&nbsp|&nbsp&nbsp
+				<a href="#">居家维修保养</a>&nbsp&nbsp|&nbsp&nbsp
+				<a href="#">住宿优惠信息</a>&nbsp&nbsp|&nbsp&nbsp
+				<a href="#">出行接送</a>&nbsp&nbsp|&nbsp&nbsp
+				<a href="#">E族活动</a>&nbsp&nbsp|&nbsp&nbsp
+				<a href="#">E族爱心</a>&nbsp&nbsp|&nbsp&nbsp
+				<a href="#">积分商城</a> 
+			</p>
+			<p>© 2017-2018  E族之家  版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号</p>
+		</div>
+	</div>
+</body>
+</html>
